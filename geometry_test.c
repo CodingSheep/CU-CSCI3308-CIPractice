@@ -159,7 +159,7 @@ START_TEST(test_2d_area_triangle)
     c.y = 1;
     double result = coord_2d_area_triangle(&a, &b, &c);
     
-    ck_assert(result == 0.5);
+    ck_assert_double_eq(result, 0.5);
 }
 END_TEST
 
